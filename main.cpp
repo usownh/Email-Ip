@@ -1,12 +1,17 @@
-#include "mainwindow.h"
 #include <QApplication>
 #include <QTextCodec>
+#include <checkandemail.h>
+#include <setting.h>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
-    MainWindow w;
-    w.show();
 
+    Setting settings;
+    settings.readSettings();
+    CheckAndEmail mainProcess(&settings);
+    if(settings.gui)
+        mainProcess.runWithUi();
+    else
+        mainProcess.run();
     return a.exec();
 }

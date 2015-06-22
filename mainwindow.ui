@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>398</width>
-    <height>283</height>
+    <width>542</width>
+    <height>368</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>40</x>
       <y>10</y>
-      <width>331</width>
-      <height>241</height>
+      <width>471</width>
+      <height>331</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -29,7 +29,7 @@
        <item>
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>smtp服务器：</string>
+          <string> smtp服务器 ：</string>
          </property>
         </widget>
        </item>
@@ -47,7 +47,7 @@
        <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string> 登 陆 名 ：</string>
+          <string>  登 陆 名  ：</string>
          </property>
         </widget>
        </item>
@@ -58,26 +58,26 @@
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>  密  码  ：</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPassword">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
-         </property>
-        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>   密  码   ：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditPassword">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -86,12 +86,48 @@
        <item>
         <widget class="QLabel" name="label_4">
          <property name="text">
-          <string> 目标邮箱 ：</string>
+          <string>  目标邮箱  ：</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEditDestination">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string> 外网IP查询网址 ：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditCheckIpUrl">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string> IP 提取正则式  ：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPickIpRegExp">
          <property name="text">
           <string/>
          </property>

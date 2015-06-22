@@ -14,8 +14,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    smtp.cpp \
+    setting.cpp \
+    checkandemail.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    smtp.h \
+    setting.h \
+    checkandemail.h
 
 FORMS    += mainwindow.ui
